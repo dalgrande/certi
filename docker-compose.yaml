@@ -1,0 +1,10 @@
+##docker-compose.yml with a express server and run
+
+version: '3.1'
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
