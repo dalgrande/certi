@@ -1,9 +1,9 @@
 #dockerfile to run a express app
 FROM node:latest
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR ./
 # Install app dependencies
-COPY package*.json ./
+COPY . .
 RUN npm install
 # Bundle app source
 COPY . .
